@@ -11,8 +11,8 @@ _2014-03-05_
 Applications that want to use the global SSL context with OkHttp should configure their
 OkHttpClient instances with the following:
 
-```
-    okHttpClient.setSslSocketFactory(HttpsURLConnection.getDefaultSSLSocketFactory());
+```java
+okHttpClient.setSslSocketFactory(HttpsURLConnection.getDefaultSSLSocketFactory());
 ```
 
 A simpler solution is to avoid the shared default SSL socket factory. Instead, if you
@@ -142,4 +142,3 @@ _2013-05-06_
 _2013-05-06_
 
 Initial release.
-
